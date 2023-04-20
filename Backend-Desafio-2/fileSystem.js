@@ -122,9 +122,11 @@ const updatedProduct = {
 };
 
 const test = async () => {
-  const get = await productManager.getProducts();
-  // console.log("Productos", get);
   await productManager.addProducts([producto1, producto2, producto3]);
+
+  //Producto 1: Se trae en base a su Id
+  //Producto 2: Se elimina en base a su Id
+  //Producto 3: Se le actualiza con nuevos datos, luego lo muestra en en base a su id antes y despues de su actualizacion para observar los cambios.
 
   console.log("--------------------------------------");
   console.log(await productManager.getProductById(1)); //Producto con Id 1
@@ -138,14 +140,20 @@ const test = async () => {
 
   console.log("                                      "); //?Espacio para que se vea mas clara la terminal
 
+  console.log("-----  ANTES de ser actualizado  ----");
+  console.log(await productManager.getProductById(3)); // Muestra el producto ANTES de ser actualizado
+  console.log("--------------------------------------");
+
+  console.log("                                      "); //?Espacio para que se vea mas clara la terminal
+
   console.log("--------------------------------------");
   await productManager.updateProduct(3, updatedProduct);
   console.log("--------------------------------------");
 
   console.log("                                      "); //?Espacio para que se vea mas clara la terminal
 
-  console.log("--------------------------------------");
-  console.log(await productManager.getProductById(3)); // Muestra el producto actualizado
+  console.log("-----  LUEGO de ser actualizado  ----");
+  console.log(await productManager.getProductById(3)); // Muestra el producto LUEGO de ser actualizado
   console.log("--------------------------------------");
 
   //! Se muestran los productos con Id 1 y 3 ya que el producto con Id 2 fue eliminado

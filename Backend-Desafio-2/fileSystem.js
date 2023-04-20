@@ -133,26 +133,27 @@ const test = async () => {
   console.log("                                      "); //?Espacio para que se vea mas clara la terminal
 
   console.log("--------------------------------------");
-  console.log(await productManager.getProductById(10)); //Not found - Undefined
+  await productManager.deleteProduct(2);
   console.log("--------------------------------------");
 
   console.log("                                      "); //?Espacio para que se vea mas clara la terminal
 
   console.log("--------------------------------------");
-  await productManager.deleteProduct(3);
+  await productManager.updateProduct(3, updatedProduct);
   console.log("--------------------------------------");
 
   console.log("                                      "); //?Espacio para que se vea mas clara la terminal
 
   console.log("--------------------------------------");
-  await productManager.updateProduct(1, updatedProduct);
+  console.log(await productManager.getProductById(3)); // Muestra el producto actualizado
   console.log("--------------------------------------");
 
-  console.log("                                      "); //?Espacio para que se vea mas clara la terminal
+  //! Se muestran los productos con Id 1 y 3 ya que el producto con Id 2 fue eliminado
 
-  console.log("--------------------------------------");
-  console.log(await productManager.getProductById(1)); // Muestra el producto actualizado
-  console.log("--------------------------------------");
+  // console.log("--------------------------------------");
+  // console.log(await productManager.getProductById(10)); //Es en caso de buscar un Id que no existe
+  // console.log("--------------------------------------");
+  // console.log("                                      "); //?Espacio para que se vea mas clara la terminal
 };
 
 test();

@@ -1,7 +1,6 @@
 {
   "name": "11---websockets",
   "version": "1.0.0",
-  "description": "",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
@@ -16,5 +15,6 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22",
     "socket.io": "^4.6.1"
-  }
+  },
+  "description": ""
 }

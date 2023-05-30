@@ -1,1 +1,82 @@
-[{"id":1,"name":"prod1","description":"description of prod2","price":1400,"stock":450}]
+[
+  {
+    "_id": "6473c38cb74c05f8567ef363",
+    "name": "Nike azules",
+    "description": "Zapatillas deportivas",
+    "price": 25000,
+    "stock": 10,
+    "__v": 0
+  },
+  {
+    "_id": "6473c3a6b74c05f8567ef365",
+    "name": "Nike verdes",
+    "description": "Zapatillas deportivas",
+    "price": 25000,
+    "stock": 10,
+    "__v": 0
+  },
+  {
+    "_id": "6473c3b9b74c05f8567ef367",
+    "name": "Nike amarillas",
+    "description": "Zapatillas deportivas",
+    "price": 25000,
+    "stock": 20,
+    "__v": 0
+  },
+  {
+    "_id": "6473c3c5b74c05f8567ef369",
+    "name": "Nike rojas",
+    "description": "Zapatillas deportivas",
+    "price": 25000,
+    "stock": 20,
+    "__v": 0
+  },
+  {
+    "_id": "6473c3d4b74c05f8567ef36b",
+    "name": "Nike violetas",
+    "description": "Zapatillas deportivas",
+    "price": 25000,
+    "stock": 25,
+    "__v": 0
+  },
+  {
+    "_id": "6473c3e2b74c05f8567ef36d",
+    "name": "Nike celestes",
+    "description": "Zapatillas deportivas",
+    "price": 25000,
+    "stock": 20,
+    "__v": 0
+  },
+  {
+    "_id": "6473c3ecb74c05f8567ef36f",
+    "name": "Nike blancas",
+    "description": "Zapatillas deportivas",
+    "price": 25000,
+    "stock": 5,
+    "__v": 0
+  },
+  {
+    "_id": "6473c3f2b74c05f8567ef371",
+    "name": "Nike negras",
+    "description": "Zapatillas deportivas",
+    "price": 25000,
+    "stock": 5,
+    "__v": 0
+  },
+  {
+    "_id": "6473c3fcb74c05f8567ef373",
+    "name": "Nike grises",
+    "description": "Zapatillas deportivas",
+    "price": 25000,
+    "stock": 10,
+    "__v": 0
+  },
+  {
+    "_id": "6473c405b74c05f8567ef375",
+    "name": "Nike camel",
+    "description": "Zapatillas deportivas",
+    "price": 25000,
+    "stock": 20,
+    "__v": 0
+  }
+]

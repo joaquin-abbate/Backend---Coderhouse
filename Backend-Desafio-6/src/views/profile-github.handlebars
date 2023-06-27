@@ -1,0 +1,17 @@
+<section>
+  <h2>Perfil Github</h2>
+  <p>Te registraste con Github!</p>
+  {{#if products.length}}
+    {{#each products}}
+      <ul>
+        <li>Producto: {{productName}}</li>
+        <li>Descripción: {{description}}</li>
+        <li>Precio: ${{price}}</li>
+        <li>Stock: {{stock}}</li>
+      </ul>
+      <br />
+    {{/each}}
+  {{else}}
+    <p class="no__products">No tenemos productos</p>
+  {{/if}}
+</section>

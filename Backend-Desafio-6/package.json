@@ -2,9 +2,10 @@
   "name": "backend-coderhouse",
   "version": "1.0.0",
   "description": "Repositorio orientado a la entrega de desafios de Backend - Coderhouse",
-  "main": "index.js",
+  "main": "src/server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:express": "nodemon ."
   },
   "keywords": [],
   "author": "",

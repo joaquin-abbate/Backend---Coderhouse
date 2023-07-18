@@ -127,3 +127,18 @@ input {
 input#email {
   width: 350px;
 }
+
+.form-group-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+a {
+  color: #222;
+}
+
+a:hover {
+  color: #6dabe4;
+}

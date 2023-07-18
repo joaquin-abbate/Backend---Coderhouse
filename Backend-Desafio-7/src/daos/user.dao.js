@@ -1,6 +1,8 @@
 import { userModel } from "./models/user.model.js";
 import { createHash, isValidPassword } from "../utils.js";
 
+import "dotenv/config";
+
 export default class UserDao {
   async createUser(user) {
     try {
@@ -8,7 +10,10 @@ export default class UserDao {
       const { email, password } = user;
       const existUser = await userModel.findOne({ email });
       if (!existUser) {
-        if (email === "adminCoder@coder.com" && password === "adminCoder123") {
+        if (
+          email === process.env.ADMIN_EMAIL &&
+          password === process.env.ADMIN_PASSWORD
+        ) {
           const newUser = await userModel.create({
             ...user,
             password: createHash(password),

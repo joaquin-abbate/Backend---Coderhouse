@@ -132,10 +132,10 @@ input#email {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
 }
 
 a {
+  margin-bottom: 30px;
   color: #222;
 }
 

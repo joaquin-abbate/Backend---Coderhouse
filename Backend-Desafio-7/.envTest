@@ -1,2 +1,4 @@
-PORT=
-MongoAtlasUrl= 
+PORT=8080
+MongoAtlasUrl= "mongodb+srv://admin_joa:joadmin1@abbate.llw9bfj.mongodb.net/ecommerce?retryWrites=true&w=majority"
+ADMIN_EMAIL=adminCoder@coder.com
+ADMIN_PASSWORD=adminCoder123

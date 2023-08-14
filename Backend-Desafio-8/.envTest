@@ -1,5 +1,5 @@
 PORT=8080
-MONGO_ATLAS_URL= "mongodb+srv://admin_joa:joa_admin1@abbate.llw9bfj.mongodb.net/ecommerce?retryWrites=true&w=majority"
+MONGO_ATLAS_URL= 
 ADMIN_EMAIL=adminCoder@coder.com
 ADMIN_PASSWORD=adminCoder123
 SID: AC96b67147ebb18bd5116ca5265f288179

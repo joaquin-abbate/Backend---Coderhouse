@@ -1,0 +1,4 @@
+{"level":"error","message":"error en el endpoint de prueba"}
+{"level":"error","message":"error en el endpoint de prueba"}
+{"level":"info","message":"Conectado a la base de datos de MongoDB"}
+{"level":"info","message":"Escuchando al puerto 8080"}

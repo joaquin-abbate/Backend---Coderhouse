@@ -1,3 +1,4 @@
+import { and } from "sequelize";
 import factory from "../persistence/daos/factory.js";
 import { logger } from "../utils/logger.js";
 const { userManager } = factory;

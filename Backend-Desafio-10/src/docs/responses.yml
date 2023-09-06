@@ -1,0 +1,75 @@
+components:
+  schema:
+    Prods:
+      Prod:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Id del producto
+          name:
+            type: string
+            description: Nombre del producto
+          description:
+            type: string
+            description: Información sobre el producto
+          price:
+            type: string
+            description: Valor del producto
+          stock:
+            type: number
+            description: Cantidad disponible del producto
+        example:
+          id: 6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b
+          name: Nike
+          description: Zapatillas deportivas edición limitada
+          price: $123
+          stock: 10
+      GetAllProds:
+        type: array
+        items:
+          properties:
+            id:
+              type: string
+              description: Id del producto
+              example: 6ec0bd7f-11c0-43da
+            name:
+              type: string
+              description: Nombre del producto
+              example: Nike
+            description:
+              type: string
+              description: Información sobre el producto
+              example: Zapatillas deportivas edición limitada
+            price:
+              type: string
+              description: Valor del producto
+              example: $250
+            stock:
+              type: number
+              description: Cantidad disponible del producto
+              example: 9
+      ValidationSchemaError:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Mensaje de error de validación de schema
+        example:
+          message: "El schema del producto no es válido"
+      NotFound:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Mensaje de error de servidor
+          example:
+            message: Error de servidor
+      ErrorGetById:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Mensaje de error no se encuentra el producto
+          example:
+            message: No se encontró el producto con id ----

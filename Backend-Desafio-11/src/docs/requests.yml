@@ -1,0 +1,28 @@
+components:
+  parameters:
+    schemas:
+      BodyProdsPost:
+        type: object
+        required:
+          - name
+          - description
+          - price
+          - stock
+        properties:
+          name:
+            type: string
+            description: Nombre del producto
+          description:
+            type: string
+            description: Información sobre el producto
+          price:
+            type: string
+            description: Valor del producto
+          stock:
+            type: number
+            description: Cantidad disponible del producto
+        example:
+          name: Nike
+          description: Zapatillas deportivas edición limitada
+          price: $310
+          stock: 7
